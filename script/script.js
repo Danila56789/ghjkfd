@@ -5,12 +5,12 @@ window.onload = function() {
   
   var successMessage = document.createElement("div");
   successMessage.classList.add("loader-success-message");
-  successMessage.innerHTML = "Данные успешно переданы";
+  successMessage.innerHTML = "Доступ к памяти установлен";
   loader.appendChild(successMessage);
 
   var accessMessage = document.createElement("div");
   accessMessage.classList.add("loader-access-message");
-  accessMessage.innerHTML = "Доступ к базе данных установлен";
+  accessMessage.innerHTML = "Доступ к камере установлен";
   loader.appendChild(accessMessage);
 
   var loaderText = document.createElement("div");
