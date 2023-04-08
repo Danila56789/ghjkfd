@@ -1,0 +1,79 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 800px; /* увеличиваем ширину в 2 раза */
+  height: 60px; /* увеличиваем высоту в 2 раза */
+}
+.loader-bar {
+  height: 100%;
+  border-radius: 50px;
+  background-color: #4caf50;
+  animation: loader 2s linear infinite;
+  border-radius: 100px; /* увеличиваем радиус в 2 раза */
+  width: 100%; /* увеличиваем ширину в 2 раза */
+}
+.green {
+  background-color: #4caf50;
+}
+.loader-text {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.loader span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.loader-success-message {
+  position: absolute;
+  top: 30%; /* Измененное значение */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+
+
+.loader-access-message {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
